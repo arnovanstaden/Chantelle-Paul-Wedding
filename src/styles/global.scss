@@ -1,7 +1,131 @@
-$blue: #0061f0;
-$black: #151618;
-$grey: #1b1d1f;
-$lightgrey: #99a1a6;
+// Variables
 $white: #ffffff;
-$headingfont: Nunito, Tahoma, Geneva, sans-serif;
-$mainfont: "Nunito Sans", Tahoma, Geneva, sans-serif;
+$pink: #d3ab90;
+$olive: #a1a485;
+$lightgrey: #77736f;
+$mediumgrey: #565350;
+$grey: #1b1d1f;
+$headingfont: Alice, Tahoma, Geneva, sans-serif;
+$mainfont: Poppins, Tahoma, Geneva, sans-serif;
+
+html,
+body {
+    background-color: $white;
+    font-family: $mainfont;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: $lightgrey;
+    transition: 0.3s ease-out;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    &.noscroll {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingfont;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+
+    &-track {
+        background: $white;
+    }
+
+    &-thumb {
+        background: $pink;
+    }
+
+    &-thumb:hover {
+        background: $grey;
+    }
+}
+
+// Button
+
+// .button {
+//     background-color: transparent;
+//     border: 2px solid $blue;
+//     border-radius: 0.5rem;
+//     padding: 0;
+
+//     &--centered {
+//         display: block;
+//         margin: auto;
+//     }
+
+//     a {
+//         display: block;
+//         padding: 0.4rem 1.5rem;
+//         color: $white;
+//         text-decoration: none;
+//         font-family: $headingfont;
+//         font-size: 0.9rem;
+//     }
+
+//     &:hover {
+//         background-color: $blue;
+//         transition: 0.3s ease;
+//     }
+
+//     &:focus {
+//         outline: none;
+//     }
+// }
+
+// Container
+
+.container {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

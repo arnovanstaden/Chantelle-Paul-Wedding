@@ -1,6 +1,9 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -11,12 +14,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Art by Jaret",
-        short_name: "Art by Jaret",
+        name: "Chantelle & Paul",
+        short_name: "Chantelle & Paul",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#ffffff",
-        icon: "src/assets/images/logos/favicon.png"
+        icon: "src/assets/images/icons/favicon.png"
       },
     },
   ],

@@ -1,0 +1,33 @@
+@import "../global.scss";
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    margin-top: 4rem;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+
+        h2 {
+            margin: 0;
+            font-weight: 400;
+            color: $grey;
+        }
+
+        &:first-child {
+            text-align: right;
+        }
+
+        &:last-child {
+            justify-content: flex-end;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+}

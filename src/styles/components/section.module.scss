@@ -1,1 +1,56 @@
 @import "../global.scss";
+
+.section {
+    // min-height: 100vh;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+
+    .heading {
+        text-align: center;
+        position: relative;
+        padding-top: 1rem;
+
+        h2 {
+            position: relative;
+            color: $grey;
+            font-size: 2rem;
+            margin: 0;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            padding-top: 0.5rem;
+            z-index: 50;
+        }
+
+        p {
+            position: relative;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            margin: 0;
+            font-weight: 300;
+            z-index: 50;
+        }
+
+        .image {
+            position: absolute;
+            top: -2rem;
+            left: 52.5%;
+            transform: translateX(-50%);
+            width: 7rem;
+            z-index: 1;
+        }
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &.green {
+        background-color: rgba($color: $olive, $alpha: 0.3);
+    }
+}

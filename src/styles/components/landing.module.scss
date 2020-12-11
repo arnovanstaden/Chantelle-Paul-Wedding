@@ -1,0 +1,68 @@
+@import "../global.scss";
+
+.landing {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 5;
+        color: $white;
+
+        .intro {
+            font-family: $headingfont;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 1.5rem 0;
+        }
+
+        .save-date {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                text-transform: uppercase;
+                margin: 0 1rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+            span {
+                width: 4rem;
+                height: 1.5px;
+                background-color: $pink;
+            }
+        }
+
+        .date {
+            padding: 1rem 2.5rem;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            border: 1.5px solid $white;
+            font-family: $headingfont;
+        }
+    }
+}
