@@ -4,11 +4,12 @@ import { graphlql } from "gatsby";
 // Components
 import Section from "../components/Section";
 import Landing from "../components/Landing";
-import InfoBlock from "../components/InfoBlock";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Location from "../components/Location";
 import DetailsGrid from "../components/DetailsGrid";
+import QuoteBlock from "../components/QuoteBlock";
+import RSVP from "../components/RSVP";
 
 // Styles
 import "../styles/global.scss";
@@ -33,7 +34,7 @@ export default function Home({ data }) {
         <Intro />
       </Section>
 
-      {/* QUOte */}
+      <QuoteBlock />
 
       <Section
         {...sectionHeadings.details}
@@ -50,6 +51,8 @@ export default function Home({ data }) {
       >
 
       </Section>
+
+      <RSVP />
 
       <Section
         {...sectionHeadings.transport}

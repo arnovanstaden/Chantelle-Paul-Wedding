@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import styles from "../styles/components/intro.module.scss";
 
-
 const Intro = () => {
     const data = useStaticQuery(graphql`
     query{

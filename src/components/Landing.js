@@ -3,7 +3,10 @@ import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 
 // Styles
-import styles from "../styles/components/landing.module.scss"
+import styles from "../styles/components/landing.module.scss";
+
+import landingIcon from "../assets/images/icons/landing.svg"
+
 
 const Landing = () => {
     const data = useStaticQuery(graphql`
@@ -43,6 +46,7 @@ const Landing = () => {
                     <p>Save the date</p>
                     <span></span>
                 </div>
+                <img src={landingIcon} alt="" />
                 <p className={styles.date}>16 December 2020</p>
             </div>
         </div>
