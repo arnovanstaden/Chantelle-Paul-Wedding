@@ -11,8 +11,7 @@ const Section = (props) => {
 
     const sectionClasses = classNames(
         styles.section,
-        props.green ? styles.green : ""
-    )
+        props.green ? styles.green : "")
 
     // Helpers
     const getImage = (name) => {

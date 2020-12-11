@@ -10,6 +10,7 @@ import Location from "../components/Location";
 import DetailsGrid from "../components/DetailsGrid";
 import QuoteBlock from "../components/QuoteBlock";
 import RSVP from "../components/RSVP";
+import Timeline from "../components/Timeline";
 
 // Styles
 import "../styles/global.scss";
@@ -43,16 +44,22 @@ export default function Home({ data }) {
         <DetailsGrid />
       </Section>
 
-      {/* RSVP */}
+      <Section
+        {...sectionHeadings.rsvp}
+        sectionName="rsvp"
+        green={true}
+      >
+        <RSVP />
+      </Section>
 
       <Section
         {...sectionHeadings.when}
         sectionName="when"
       >
+        <Timeline />
 
       </Section>
 
-      <RSVP />
 
       <Section
         {...sectionHeadings.transport}

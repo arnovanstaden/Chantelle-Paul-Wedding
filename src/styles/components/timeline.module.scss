@@ -1,0 +1,75 @@
+@import "../global.scss";
+
+.timeline {
+    margin-top: 4rem;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 3rem 1fr;
+
+        &.left {
+            .text {
+                grid-column: 1/2;
+                text-align: right;
+            }
+        }
+
+        &.right {
+            .text {
+                grid-column: 3/4;
+            }
+        }
+
+        .text {
+            padding: 1rem;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $grey;
+                margin: 0;
+            }
+
+            h5 {
+                margin: 0.5rem;
+                font-family: $mainfont;
+                color: $mediumgrey;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 0.95rem;
+            }
+        }
+
+        .line {
+            grid-column: 2/3;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 2px;
+            background-color: $pink;
+            height: 100%;
+
+
+            div {
+                height: 100%;
+                width: 2px;
+                background-color: $pink;
+            }
+
+            img {
+                width: 2rem;
+                height: 2rem;
+                background-color: $white;
+                display: inline;
+                margin-top: 1rem;
+            }
+        }
+
+
+    }
+}
