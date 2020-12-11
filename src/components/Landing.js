@@ -13,7 +13,7 @@ const Landing = () => {
         query{
             file(relativePath: { eq: "sections/landing.jpg" }) {
             childImageSharp {
-                fluid( maxWidth: 1920, quality: 100) {
+                fluid( maxWidth: 1920, quality: 60) {
                     aspectRatio
                     base64
                     sizes
@@ -38,16 +38,18 @@ const Landing = () => {
             <div className={styles.image}>
                 <Img fluid={data.file.childImageSharp.fluid} style={imageStyles}></Img>
             </div>
-            <div className={styles.text}>
-                <p className={styles.intro}>We are getting married</p>
-                <h1>Chantelle &amp; Paul</h1>
-                <div className={styles.saveDate}>
-                    <span></span>
-                    <p>Save the date</p>
-                    <span></span>
+            <div className="container">
+                <div className={styles.text}>
+                    <p className={styles.intro}>We are getting married</p>
+                    <h1>Chantelle &amp; Paul</h1>
+                    <div className={styles.saveDate}>
+                        <span></span>
+                        <p>Save the date</p>
+                        <span></span>
+                    </div>
+                    <img src={landingIcon} alt="" />
+                    <p className={styles.date}>16 December 2020</p>
                 </div>
-                <img src={landingIcon} alt="" />
-                <p className={styles.date}>16 December 2020</p>
             </div>
         </div>
     )

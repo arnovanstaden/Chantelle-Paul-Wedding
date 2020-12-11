@@ -11,7 +11,7 @@ const QuoteBlock = () => {
             <div className="container">
                 <div className={styles.block}>
                     <img src={quoteIcon} alt="" />
-                    <h1>If I Had A Flower For Every Time I Thought Of You... <br />
+                    <h1>If I Had A Flower For Every Time I Thought Of You...
                     I Could Walk Through My Garden Forever.</h1>
                     <p>- Alfred Tennyson -</p>
                 </div>

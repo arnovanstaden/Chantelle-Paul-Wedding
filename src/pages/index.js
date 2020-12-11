@@ -16,6 +16,10 @@ import Timeline from "../components/Timeline";
 import "../styles/global.scss";
 import styles from "../styles/pages/index.module.scss";
 
+// Fonts
+import "typeface-alice";
+import "typeface-poppins";
+
 
 // Data
 import sectionHeadings from "../assets/data/sections.json";

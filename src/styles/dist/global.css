@@ -1,0 +1,80 @@
+html,
+body {
+  background-color: #ffffff;
+  font-family: Poppins, Tahoma, Geneva, sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #77736f;
+  transition: 0.3s ease-out;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body.noscroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Alice, Tahoma, Geneva, sans-serif;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #d3ab90;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b1d1f;
+}
+
+.container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

@@ -77,74 +77,53 @@ h6 {
     max-width: 1140px;
   }
 }
-.timeline {
-  margin-top: 4rem;
-}
-.timeline .grid {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 3rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  margin-top: 5rem;
 }
-.timeline .grid.left .text {
-  grid-column: 1/2;
-  text-align: right;
+.grid .block {
+  text-align: center;
 }
-.timeline .grid.right .text {
-  grid-column: 3/4;
+.grid .block img {
+  width: 4rem;
 }
-.timeline .grid .text {
-  padding: 1rem;
-}
-.timeline .grid .text h3 {
-  font-size: 1.5rem;
+.grid .block h1 {
   color: #1b1d1f;
+  font-size: 2rem;
+}
+.grid .block p {
+  font-size: 0.9rem;
+  font-weight: 300;
   margin: 0;
 }
-.timeline .grid .text h5 {
-  margin: 0.5rem;
-  font-family: Poppins, Tahoma, Geneva, sans-serif;
-  color: #565350;
-  font-weight: 500;
+.grid .block a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.25rem 1.5rem;
+  border: 1.5px solid #d3ab90;
+  color: #d3ab90;
+  font-size: 0.8rem;
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  transition: 0.3s ease-out;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
-.timeline .grid .text p {
-  font-weight: 300;
-  font-size: 0.95rem;
-}
-.timeline .grid .line {
-  grid-column: 2/3;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 2px;
+.grid .block a:hover {
+  color: #ffffff;
   background-color: #d3ab90;
-  height: 100%;
-}
-.timeline .grid .line div {
-  height: 100%;
-  width: 2px;
-  background-color: #d3ab90;
-}
-.timeline .grid .line img {
-  width: 2rem;
-  height: 2rem;
-  background-color: #ffffff;
-  display: inline;
-  margin-top: 1rem;
 }
 @media (max-width: 768px) {
-  .timeline .grid {
-    grid-template-columns: 3rem 1fr;
-    grid-template-rows: 1fr;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .timeline .grid .text {
-    text-align: left !important;
-    grid-column: 2/3 !important;
-    order: 2;
-  }
-  .timeline .grid .line {
-    grid-column: 1/2 !important;
-    order: 1;
+}
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
   }
 }

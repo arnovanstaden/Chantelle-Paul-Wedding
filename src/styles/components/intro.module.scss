@@ -30,4 +30,18 @@
             font-size: 0.9rem;
         }
     }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        .text {
+            text-align: center !important;
+        }
+
+        .image {
+            margin: 4rem auto;
+            width: 80%;
+        }
+    }
 }

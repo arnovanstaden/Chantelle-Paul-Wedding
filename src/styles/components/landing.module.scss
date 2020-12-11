@@ -24,6 +24,7 @@
         flex-direction: column;
         z-index: 5;
         color: $white;
+        position: relative;
 
         .intro {
             font-family: $headingfont;
@@ -36,6 +37,8 @@
         h1 {
             font-size: 4rem;
             margin: 1.5rem 0;
+            text-align: center;
+            font-weight: 400;
         }
 
         .save-date {
@@ -68,6 +71,12 @@
             border: 1.5px solid $white;
             font-family: $headingfont;
             margin: 0;
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 3rem;
+            }
         }
     }
 }

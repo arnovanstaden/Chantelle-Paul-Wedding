@@ -5,8 +5,14 @@ $olive: #a1a485;
 $lightgrey: #77736f;
 $mediumgrey: #565350;
 $grey: #1b1d1f;
-$headingfont: Alice, Tahoma, Geneva, sans-serif;
-$mainfont: Poppins, Tahoma, Geneva, sans-serif;
+$headingfont: Alice,
+Tahoma,
+Geneva,
+sans-serif;
+$mainfont: Poppins,
+Tahoma,
+Geneva,
+sans-serif;
 
 html,
 body {
@@ -39,6 +45,8 @@ h4,
 h5,
 h6 {
     font-family: $headingfont;
+    font-weight: 400;
+
 }
 
 ::-webkit-scrollbar {

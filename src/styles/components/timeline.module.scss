@@ -72,4 +72,23 @@
 
 
     }
+
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 3rem 1fr;
+            grid-template-rows: 1fr;
+
+            .text {
+                text-align: left !important;
+                grid-column: 2/3 !important;
+                order: 2;
+            }
+
+            .line {
+                grid-column: 1/2 !important;
+                order: 1;
+            }
+        }
+    }
 }
