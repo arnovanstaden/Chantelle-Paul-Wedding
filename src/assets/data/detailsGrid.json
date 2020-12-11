@@ -1,0 +1,32 @@
+[{
+        "name": "date",
+        "title": "Date & Time",
+        "text": "We kindly ask that guests arrive by 10:30 on Wednesday 16 December 2020"
+    },
+    {
+        "name": "venue",
+        "title": "The Venue",
+        "text": "The beautiful Graceland Vineyards in the Stellenbosch winelands.  Find more details below. "
+    },
+    {
+        "name": "rsvp",
+        "title": "RSVP",
+        "text": "Please RSVP by Sunday, 13/12/2020. Guest must please RSVP for the ceremony and lunch, as well as the bonfire."
+    },
+    {
+        "name": "drinks",
+        "title": "Food & Drink",
+        "text": "We have a variety of lunch options on the menu so no need to ask for the food preferences."
+    },
+    {
+        "name": "virtual",
+        "title": "Virtual Ceremony",
+        "text": "For those who cannot make it in person, we would love to have you join in virtually at 10:30am.",
+        "link": "meet.google.com/ztw-svur-nzz"
+    },
+    {
+        "name": "wear",
+        "title": "What To Wear",
+        "text": "Summery - Smart Casual. Summer hats are encouraged, however parasols will be provided for your enjoyment."
+    }
+]

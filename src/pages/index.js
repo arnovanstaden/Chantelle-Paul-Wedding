@@ -8,6 +8,7 @@ import InfoBlock from "../components/InfoBlock";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Location from "../components/Location";
+import DetailsGrid from "../components/DetailsGrid";
 
 // Styles
 import "../styles/global.scss";
@@ -38,6 +39,7 @@ export default function Home({ data }) {
         {...sectionHeadings.details}
         sectionName="details"
       >
+        <DetailsGrid />
       </Section>
 
       {/* RSVP */}
@@ -71,6 +73,7 @@ export default function Home({ data }) {
         {...sectionHeadings.where}
         sectionName="where"
       >
+        <Location />
       </Section>
 
       <Section
@@ -78,9 +81,19 @@ export default function Home({ data }) {
         sectionName="gifts"
         green={true}
       >
+        <div className={styles.gifts}>
+          <p>You joining in on the days celebration means the world to us, however, should you wish to bless us: </p>
+          <p>
+            <span> C Y Janse Van Vuuren </span>
+            <span>First National Bank</span>
+            <span>Branch Code: 250 655</span>
+            <span>Account Type: Savings</span>
+            <span>Account Number: 6221 422 0204</span>
+          </p>
+        </div>
       </Section>
 
-    </div>
+    </div >
   )
 }
 
