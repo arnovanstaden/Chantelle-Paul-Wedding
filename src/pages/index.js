@@ -1,5 +1,4 @@
 import React from "react";
-import { graphlql } from "gatsby";
 
 // Components
 import Section from "../components/Section";

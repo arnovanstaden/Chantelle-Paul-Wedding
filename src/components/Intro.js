@@ -31,15 +31,22 @@ const Intro = () => {
     return (
         <div className={styles.intro}>
             <div className={styles.text}>
-                <h2>Chantelle Jansen van Vuuren</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </p>
+                <h2>Chantelle Janse van Vuuren</h2>
+                <p>She was a pretty and tall English soutie,
+                he was a handsome short Afrikaans outjie.
+                He went down on his knees, she said yes,
+                the date is set, she has a dress. </p>
             </div>
             <div className={styles.image}>
                 <Img fluid={data.file.childImageSharp.fluid} style={imageStyles}></Img>
             </div>
             <div className={styles.text}>
                 <h2>Paul van Staden</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali Lorem ipsum dolor sit amet, consectetuer adipiscing elit, </p>
+                <p>The single life is getting ditched,
+                cause these two are getting hitched.
+                Join us for a beautiful day to remember,
+                next week on the 16th of December.
+                </p>
             </div>
         </div>
     )
